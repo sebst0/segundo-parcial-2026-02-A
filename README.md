@@ -103,3 +103,35 @@ Para este caso:
 El programa también será probado con otros valores, incluyendo datos inválidos y valores repetidos.
 
 ---
+
+
+Entradas
+
+- cantidad de cargas
+- peso de cada carga
+
+procesos
+
+- validar que la cantidad de cargas esten entre 3 y 20
+- validar que cada peso esten entre 5 y 200 kg
+- almacenar los pesos 
+- sumar todos los pesos 
+- contar las cargas con peso entre 5 y 80 kg, incluidos ambos limites
+- contar las cargas con peso superior a 80 kg
+- calcular el promedio 
+- buscar el mayor peso registrado
+- contar las cargas cuyo peso sea superior al promedio
+- buscar la primera posición en la que aparecio el mayor peso
+- mostrar el listado numerado de todos los pesos registrados
+- mostrar el resumen final de los resultados
+
+salidas 
+
+- cantidad de cargas entre 5 y 80 kg
+- cantidad de cargas superiores a 80 kg
+- peso total recibido durante la jornada
+- promedio de peso por carga
+- mayor peso registrado
+- cantidad de cargas superiores al promedio
+- numero de la primera carga donde aparecio el mayor peso
+- listado numerado de todos los pesos registrados

@@ -11,9 +11,11 @@ public class CentroReciclaje {
         cargarPesos(leer, pesos);
 
         int total = calcularTotal(pesos);
-
-        int entreRango = contarEnRango(pesos, 5, 80);
-        int superiores = contarMayores(pesos, 80);
+        int minimo = 5; 
+        int maximo = 80;
+        int limite = 80;
+        int entreRango = contarEnRango(pesos, minimo, maximo);
+        int superiores = contarMayores(pesos, limite);
         double promedio = calcularPromedio(pesos);
         int mayor = buscarMayor(pesos);
         int mayoresPromedio = contarMayores(pesos, promedio);
@@ -157,11 +159,11 @@ public class CentroReciclaje {
             System.out.println("el peso de la carga " + (i+1) + " es " + pesos[i]);
         }
 
-        System.out.println("el total de todos los pesos es de: " + total + "kg");
+        System.out.println("el total de todos los pesos es de: " + total + " kg");
         System.out.println("Primera carga con el mayor peso: " + posicionMayor);
-        System.out.println("cargas superiores a 80kg: " + superiores);
-        System.out.println("promedio de peso: "+ promedio + "kg");
-        System.out.println("mayor peso registrado " + mayor + "kg");
+        System.out.println("cargas superiores a 80 kg: " + superiores);
+        System.out.println("promedio de peso: "+ promedio + " kg");
+        System.out.println("mayor peso registrado " + mayor + " kg");
         System.out.println("cantidad de cargas entre 5 y 80 kg: " + entreRango);
         System.out.println("cantidad de cargas mayores al promedio: " + mayoresPromedio);
 
